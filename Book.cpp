@@ -1,11 +1,9 @@
-﻿#include "Book.h"
+﻿#include "Book.hpp"
 
 int Book::count = 0;
 
-// Конструктор
 Book::Book(const std::string& title, const std::string& author, const std::string& additionalInfo)
-    : title(title), author(author), info(additionalInfo), id(++count) {
-}
+    : title(title), author(author), info(additionalInfo), id(++count) {}
 
 std::string Book::getTitle() const {
     return title;
